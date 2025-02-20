@@ -30,10 +30,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('tickets')->insert([
             ['user_id' => 2,'number' => 1001,'status' => 'done','created_at' => $now,'updated_at' => $now],
-            ['user_id' => 2,'number' => 1002,'status' => 'done','created_at' => $now,'updated_at' => $now],
-            ['user_id' => 2,'number' => 1003,'status' => 'now','created_at' => $now,'updated_at' => $now],
-            ['user_id' => 2,'number' => 1004,'status' => 'waiting','created_at' => $now,'updated_at' => $now],
-            ['user_id' => 2,'number' => 1005,'status' => 'waiting','created_at' => $now,'updated_at' => $now],
+            ['user_id' => 2,'number' => 1002,'status' => 'now','created_at' => $now,'updated_at' => $now],
         ]);
     }
 }
