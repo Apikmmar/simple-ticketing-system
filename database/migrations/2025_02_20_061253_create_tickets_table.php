@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->integer('number');
+            $table->enum('status', ['now', 'waiting', 'done']);
             $table->timestamps();
         });
     }
